@@ -1,5 +1,5 @@
 {
-  "v": 6,
+  "v": 7,
   "spotify": {
     "trackRow":          "[role='row']:has(a[href*='/artist/'])",
     "trackRowFallback":  "[data-testid='tracklist-row']",
@@ -12,17 +12,28 @@
     "cardBoundaryRoles": "main|navigation|banner|region|contentinfo|complementary"
   },
   "search": {
-    "resultBlock": ".MjjYud:has(a[href*='DOMAIN']):not(#tads .MjjYud):not(#tadsb .MjjYud),li[data-layout]:has(a[href*='DOMAIN']):not(.result--ad *),li.b_algo:has(a[href*='DOMAIN']):not(.b_ad *)",
+    "resultBlock": ".MjjYud:has(a[href*='DOMAIN']):not(#tads .MjjYud):not(#tadsb .MjjYud),li[data-layout]:has(a[href*='DOMAIN']):not(.result--ad *),li.b_algo:has(a[href*='DOMAIN']):not(.b_ad *),  .snippet:has(a[href*='DOMAIN']):not([data-type='ad']),.w-gl__result:has(a[href*='DOMAIN'])",
+    "imageResultBlock": ".eA0Zlc:has(a[href*='DOMAIN']),.tile--img:has(a[href*='DOMAIN']),.iusc:has(a[href*='DOMAIN']),.image-result:has(a[href*='DOMAIN']),.image-tiles li:has(a[href*='DOMAIN'])",
     "aiBoxes": [
       ".YzIpSc",
+      ".mgAbYb",
       "[data-attrid='wa:/description']",
       "#infobox",
       "div[jscontroller][data-hveid] .mod",
       "#b_sydConvCont",
       "#copilot-ans-container",
       ".b_ans[data-tag='copilot']",
-      ".js-tag-nav-summary"
-    ]
+      "#b_context",
+      ".js-tag-nav-summary",
+      "[data-content='ai-assist']",
+      ".DDGDp-module--aiResponse",
+      "#mobile-web-ai",
+      ".leo-rich-ans",
+      "[data-testid='brave-leo-answer']",
+      ".answer-box",
+      ".ai-generated-answer"
+    ],
+    "cloakSelectors": "#search, #rso, #b_results, #results, .serp__results, .mainline"
   },
   "themes": {}
 }
