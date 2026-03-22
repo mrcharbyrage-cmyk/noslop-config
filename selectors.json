@@ -1,5 +1,5 @@
 {
-  "v": 1,
+  "v": 2,
   "spotify": {
     "trackRow": "[data-testid='tracklist-row']",
     "artistLink": "a[href*='/artist/']",
@@ -7,7 +7,17 @@
     "mainTarget": "main"
   },
   "search": {
-    "resultBlock": ".MjjYud:has(a[href*='DOMAIN']),li[data-layout]:has(a[href*='DOMAIN']),li.b_algo:has(a[href*='DOMAIN'])"
+    "resultBlock": ".MjjYud:has(a[href*='DOMAIN']),li[data-layout]:has(a[href*='DOMAIN']),li.b_algo:has(a[href*='DOMAIN'])",
+    "aiBoxes": [
+      ".YzIpSc",
+      "[data-attrid='wa:/description']",
+      "#infobox",
+      "div[jscontroller][data-hveid] .mod",
+      "#b_sydConvCont",
+      "#copilot-ans-container",
+      ".b_ans[data-tag='copilot']",
+      ".js-tag-nav-summary"
+    ]
   },
   "themes": {}
 }
