@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "spotify": {
+    "trackRow": "[data-testid='tracklist-row']",
+    "artistLink": "a[href*='/artist/']",
+    "gridCard": "[data-testid='grid-item'],[data-testid='card-content'],[data-testid='artist-card']",
+    "mainTarget": "main"
+  },
+  "search": {
+    "resultBlock": "div:has(a[href*='DOMAIN']),li:has(a[href*='DOMAIN']),li.b_algo:has(a[href*='DOMAIN'])"
+  }
+}
