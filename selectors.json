@@ -7,7 +7,7 @@
     "mainTarget": "main"
   },
   "search": {
-    "resultBlock": "div.g:has(a[href*='DOMAIN']),li[data-layout]:has(a[href*='DOMAIN']),li.b_algo:has(a[href*='DOMAIN'])"
+    "resultBlock": ".MjjYud:has(a[href*='DOMAIN']),li[data-layout]:has(a[href*='DOMAIN']),li.b_algo:has(a[href*='DOMAIN'])"
   },
   "themes": {}
 }
