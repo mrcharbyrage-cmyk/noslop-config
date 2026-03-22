@@ -1,5 +1,5 @@
 {
-  "v": 5,
+  "v": 6,
   "spotify": {
     "trackRow":          "[role='row']:has(a[href*='/artist/'])",
     "trackRowFallback":  "[data-testid='tracklist-row']",
@@ -9,7 +9,7 @@
     "cardStopTags":      "li|article",
     "cardStopTestid":    "card|item|grid",
     "cardWalkDepth":     "10",
-    "cardBoundaryRoles": "grid|list|main|navigation|banner|region"
+    "cardBoundaryRoles": "main|navigation|banner|region|contentinfo|complementary"
   },
   "search": {
     "resultBlock": ".MjjYud:has(a[href*='DOMAIN']):not(#tads .MjjYud):not(#tadsb .MjjYud),li[data-layout]:has(a[href*='DOMAIN']):not(.result--ad *),li.b_algo:has(a[href*='DOMAIN']):not(.b_ad *)",
