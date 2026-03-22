@@ -1,10 +1,12 @@
 {
-  "v": 2,
+  "v": 3,
   "spotify": {
-    "trackRow": "[data-testid='tracklist-row']",
-    "artistLink": "a[href*='/artist/']",
-    "gridCard": "[data-testid='grid-item'],[data-testid='card-content'],[data-testid='artist-card']",
-    "mainTarget": "main"
+    "trackRow":         "[role='row']:has(a[href*='/artist/'])",
+    "trackRowFallback": "[data-testid='tracklist-row']",
+    "gridCard":         "[role='gridcell']:has(a[href*='/artist/']), [role='listitem']:has(a[href*='/artist/'])",
+    "gridCardFallback": "[data-testid='grid-item'],[data-testid='card-content'],[data-testid='artist-card']",
+    "artistLink":       "a[href*='/artist/']",
+    "mainTarget":       "main"
   },
   "search": {
     "resultBlock": ".MjjYud:has(a[href*='DOMAIN']),li[data-layout]:has(a[href*='DOMAIN']),li.b_algo:has(a[href*='DOMAIN'])",
