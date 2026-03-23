@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoSlop — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      font-size: 16px; line-height: 1.7; color: #1a1a1a;
+      max-width: 680px; margin: 0 auto; padding: 48px 24px 80px;
+    }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+    h2 { font-size: 18px; font-weight: 700; margin: 36px 0 10px; }
+    p  { margin-bottom: 14px; color: #333; }
+    .meta { font-size: 13px; color: #888; margin-bottom: 40px; }
+    a  { color: #16a34a; }
+    ul { margin: 0 0 14px 20px; color: #333; }
+    li { margin-bottom: 6px; }
+    .badge {
+      display: inline-block; background: #dcfce7; color: #15803d;
+      font-size: 12px; font-weight: 700; padding: 3px 10px;
+      border-radius: 20px; margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>NoSlop — Privacy Policy</h1>
+  <p class="meta">Last updated: March 2026 &nbsp;·&nbsp; Effective immediately</p>
+  <span class="badge">No data collection. No servers. 100% local.</span>
+
+  <h2>What NoSlop does</h2>
+  <p>NoSlop is a browser extension that filters AI-generated content from Spotify, Google, DuckDuckGo, Bing, Brave Search, and Startpage. All filtering is performed locally in your browser using community-maintained blocklists.</p>
+
+  <h2>Data we collect</h2>
+  <p><strong>Nothing.</strong> NoSlop does not collect, transmit, store remotely, or share any personal information. There are no analytics, no telemetry, no crash reporting, and no user accounts.</p>
+
+  <h2>Data stored locally on your device</h2>
+  <p>The following data is stored in your browser's local extension storage (<code>chrome.storage.local</code>). It never leaves your device:</p>
+  <ul>
+    <li><strong>Your personal blocklist</strong> — artist names and Spotify artist IDs you have manually blocked. Stored only on your device.</li>
+    <li><strong>Your settings</strong> — toggle states, theme preference, update frequency, and search engine preferences.</li>
+    <li><strong>Cached community blocklists</strong> — the downloaded blocklist data, cached locally to avoid repeated fetches.</li>
+    <li><strong>Allowlist</strong> — any domains you have chosen to never filter in search results.</li>
+  </ul>
+  <p>All of this data remains on your device at all times. You can export, import, or delete it at any time from within the extension.</p>
+
+  <h2>Network requests</h2>
+  <p>NoSlop makes two types of outbound network requests, both initiated solely to fetch community blocklist data:</p>
+  <ul>
+    <li><strong>Spotify blocklist</strong> — fetched from <a href="https://github.com/eye-wave/spotify-ai-blocklist" target="_blank">github.com/eye-wave/spotify-ai-blocklist</a> (GPL-3.0 licensed). Fetched at most once every 24 hours.</li>
+    <li><strong>Search domain blocklist</strong> — fetched from <a href="https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist" target="_blank">github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist</a> (CC0 licensed). Fetched at most once every 24 hours.</li>
+    <li><strong>Remote configuration</strong> — fetched from <a href="https://github.com/mrcharbyrage-cmyk/noslop-config" target="_blank">github.com/mrcharbyrage-cmyk/noslop-config</a>. Contains only CSS selectors. Fetched at most once every 12 hours.</li>
+  </ul>
+  <p>These requests are standard HTTPS GET requests to GitHub's raw content CDN. They carry no user identifiers, no browsing history, and no personal data. GitHub's own privacy policy applies to these requests.</p>
+
+  <h2>Permissions explained</h2>
+  <ul>
+    <li><strong>storage</strong> — to save your settings and cached blocklists locally.</li>
+    <li><strong>tabs</strong> — to detect which site you are on and show the correct module status in the popup. Tab URLs are read locally and never transmitted.</li>
+    <li><strong>Host permissions</strong> (Spotify, Google, DDG, Bing, Brave, Startpage, GitHub) — to inject the content scripts that perform filtering, and to fetch the blocklist files from GitHub.</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>NoSlop does not use any third-party analytics, advertising, or tracking services. The blocklist sources on GitHub are open-source community projects; their hosting on GitHub is subject to <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">GitHub's privacy policy</a>.</p>
+
+  <h2>Children's privacy</h2>
+  <p>NoSlop does not knowingly collect any data from anyone, including children under the age of 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we make material changes to this policy, we will update the "Last updated" date above. Continued use of the extension after changes constitutes acceptance.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this privacy policy can be directed to the developer via the Chrome Web Store listing page.</p>
+
+</body>
+</html>
